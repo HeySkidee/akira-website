@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <title>Akira</title>
+</head>
+
+<body>
+    <div id="main">
+        <!-- NAVBAR -->
+        <nav>
+            <a class="logo" href="#">// Akira</a>
+            <div class="nav-links">
+                <a href="">Features</a>
+                <a href="">Documentation</a>
+                <a href="">Download</a>
+            </div>
+        </nav>
+
+        <!-- HEADER -->
+        <div class="header">
+            <div class="header-img">
+                <!-- <img src="warp.gif" alt=""> -->
+            </div>
+            <div class="header-content">
+                <h1>AKIRA</h1>
+                <h2>AI Powered Terminal-Based Code Editor</h2>
+                <a href="#">Download Now</a>
+            </div>
+            <!-- <img src="scroll-down.png" id="scroll-down"> -->
+            <a href="#features-section" id="scroll-down"></a>
+        </div>
+
+        <!-- FEATURES -->
+        <div id="features-section">
+            <div class="features">
+                <h1 id="feat-heading">AKIRA IS JUST BETTER!</h1>
+                <div class="feature-boxes">
+                    <div class="features-box-left">
+                        <div class="feature-text">
+                            <h1>Neovim Ain't Shit</h1>
+                            <p>Akira mogs nvim and all terminal-based code editors</p>
+                        </div>
+
+                        <div class="feature-text">
+                            <h1>Built For Gen-Z By Gen-Z</h1>
+                            <p>Imagine using VS Code in 2024 lmao</p>
+                        </div>
+
+                        <div class="feature-text">
+                            <h1>AI That Doesn't Suck</h1>
+                            <p>It understands developers and never hallucinates</p>
+                        </div>
+                    </div>
+                    
+                    <!-- <img src="media/akira-2.png" class="features-box-right" alt=""> -->
+                    <img src="media/akira-1.jpg" class="features-box-right" alt="">
+                </div>
+            </div>
+            <video id="bg-video" src="media/linux-rice.mp4" autoplay muted loop></video>
+            <!-- <img src="akira-1.jpg"  id="bg-video"> -->
+        </div>
+
+        <!-- PAGE END -->
+        <div id="end">
+            <div class="end-content">
+                <h1 id="end-heading">DOWNLOAD NOW!</h1>
+                <div class="downloads">
+                    <a id="download" href="#">
+                        <i class="fa-brands fa-windows"></i>
+                        <h2>Windows</h2>
+                    </a>
+                    <a id="download" href="#">
+                        <i class="fa-brands fa-apple"></i>
+                        <h2>Mac</h2>
+                    </a>
+                    <a id="download" href="#">
+                        <i class="fa-brands fa-linux"></i>
+                        <h2>Linux</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <a class="logo" href="#">&copy; Akira 2024</a>
+            <div class="footer-links">
+                <a href="https://github.com/HeySkidee">GitHub</a>
+                <a href="https://twitter.com/HeySkidee">Twitter</a>
+                <a href="#">Discord</a>
+            </div>
+        </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/4e012046d4.js" crossorigin="anonymous"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script> -->
+    <script>
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('#main'),
+            smooth: true
+        });
+    </script>
+</body>
+
+</html>
