@@ -5,6 +5,10 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root {
     --primary: #cda3fd;
     --secondary: #b97cff;
@@ -209,7 +213,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 11vh;
+    padding-top: 12vh;
 }
 #end-heading{
     font-size: 5.7vw;
@@ -218,7 +222,8 @@ nav {
 .downloads{
     width: 100%;
     display: flex;
-    margin-top: 1.5rem;
+    /* margin-top: 1.5rem; */
+    margin-top: 2vh;
 }
 #download{
     display: flex;
@@ -228,6 +233,7 @@ nav {
     text-decoration: none;
     color: var(--primary);
     padding: 3rem;
+    /* margin-right: 12px; */
     gap: 1.2rem;
     transition: 0.3s ease;
     border: 1px solid transparent;
@@ -272,4 +278,23 @@ footer{
     color: black;
     background-color: var(--primary);
     text-shadow: 0 0 2px var(--primary);
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-100%);
+    transition: all 1s ease;
+}
+.show{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0)
+}
+
+/* if someone does not want animations */
+@media(prefers-reduced-motion){ 
+    .hidden{
+        transition: none; 
+    }
 }
