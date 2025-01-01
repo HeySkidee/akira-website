@@ -1,3 +1,10 @@
+const toggleButton = document.getElementById('hamburger')
+const navLinks = document.getElementById('nav-links')
+
+toggleButton.addEventListener('click', () => {
+    navLinks.classList.toggle('active')
+})
+
 // adding an intersection observer that check if the element is intersected on viewport
 
 const observer = new IntersectionObserver(entry => {
@@ -88,8 +95,9 @@ const lenis = new Lenis();
 
 // Use requestAnimationFrame to continuously update the scroll
 function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
+    lenis.raf(time);
+    requestAnimationFrame(raf);
 }
 
 raf()
+

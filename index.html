@@ -4,10 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:description" content="AI Powered Terminal-Based Code Editor">
+    <meta property="og:image" content="https://i.imgur.com/LdbW0bX.png">
+    <meta property="og:url" content="https://Akira-AI.vercel.app">
+
+
     <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="media-queries.css">
     <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script> 
-    <script defer src="index.js"></script>
+    
     <title>Akira</title>
 </head>
 
@@ -16,25 +23,25 @@
         <!-- NAVBAR -->
         <nav>
             <a class="logo codedText hidden" href="#">// Akira</a>
-            <div class="nav-links hidden">
+            <div class="nav-links hidden" id="nav-links">
                 <a href="#features-section" class="codedText">Features</a>
                 <a href="" class="codedText">Documentation</a>
                 <a href="#download" class="codedText">Download</a>
             </div>
+            <i class="fa-solid fa-bars menu" id="hamburger"></i>
         </nav>
 
         <!-- HEADER -->
         <div class="header">
             <div class="header-img">
-                <!-- <img src="warp.gif" alt=""> -->
+                <img src="media/warp.gif" alt="">
             </div>
             <div class="header-content">
                 <h1 class="codedOnLoad hidden">AKIRA</h1>
                 <h2 class="hidden">AI Powered Terminal-Based Code Editor</h2>
                 <a href="#download" class="codedText hidden">Download Now</a>
             </div>
-            <!-- <img src="scroll-down.png" id="scroll-down"> -->
-            <a href="#features-section" id="scroll-down"></a>
+            <!-- <a href="#features-section" id="scroll-down"></a> -->
         </div>
 
         <!-- FEATURES -->
@@ -97,6 +104,8 @@
         </footer>
     </div>
     <script src="https://kit.fontawesome.com/4e012046d4.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
 </body>
 
 </html>
