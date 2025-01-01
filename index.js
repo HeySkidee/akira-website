@@ -6,7 +6,6 @@ toggleButton.addEventListener('click', () => {
 })
 
 // adding an intersection observer that check if the element is intersected on viewport
-
 const observer = new IntersectionObserver(entry => {
     entry.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -52,7 +51,7 @@ document.querySelectorAll('.codedText').forEach((t) => {
     };
 });
 
-//for Akira h1
+//decryption of Akira h1
 function decryptOnLoad() {
     document.querySelectorAll('.codedOnLoad').forEach((t) => {
         const arr1 = t.innerHTML.split('');
