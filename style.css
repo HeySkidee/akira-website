@@ -236,7 +236,8 @@ nav .menu{
     overflow: hidden;
 
 }
-.end-content{display: flex;
+.end-content{
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -244,7 +245,7 @@ nav .menu{
 }
 #end-heading{
     font-size: 5.7vw;
-    letter-spacing: -2px;
+    /* letter-spacing: -2px; */
     margin-top: -6rem;
 }
 .downloads{
