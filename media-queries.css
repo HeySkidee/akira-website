@@ -104,6 +104,10 @@
         padding: 0.9rem 1.8rem;
     }
 
+    #scroll-down{
+        display: none;
+    }
+
     .nav-links {
         align-items: center;
         justify-content: center;

@@ -124,17 +124,18 @@ nav .menu{
 }
 
 #scroll-down{
+    position: absolute;
+    right: 0;
+    bottom: 0;
     width: 80px;
     height: 80px;
-    margin-top: auto;
-    margin-bottom: 2rem;
-    margin-right: -70px;
+    margin: 1.8rem 1.4rem;
     z-index: 20;
     background-image: url(media/scroll-down.png);
     transition: 0.4s ease;
 }
 #scroll-down:hover{
-    background-image: url(media/scroll-down-hover.png)
+    background-image: url(media/scroll-down-hover2.png)
 }
 
 #features-section {
@@ -176,7 +177,7 @@ nav .menu{
 }
 
 .features-box-left{
-    width: 42.5vw;
+    width: 43vw;
     padding: 3vw;
 
     height: auto;
